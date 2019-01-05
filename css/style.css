@@ -1,10 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .section-color {
   background-color: #f8f9fa;
+  padding-top: 32px;
 }
 
 div.container {
@@ -24,22 +26,36 @@ h2 {
 
 /* menu */
 
+nav {
+  background-color: #234099;
+  padding-bottom: 32px;
+  box-shadow: 3px 1px 8px #333;
+}
+
+.student-name-top {
+  color: #f8f9fa;
+}
+
 ul.top-menu {
   text-align: center;
   margin-top: 32px;
+  padding: 0 20px;
 }
 
 ul.top-menu li {
-  padding: 16px 32px;
-  background-color: white;
   margin: 8px;
   list-style: none;
+  margin: 8px 0;
+  background-color: #f8f9fa;
+  padding: 8px 0px;
 }
 
 ul.top-menu li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  padding: 8px 100px;
+  background-color: #f8f9fa;
 }
 
 div.profile-picture {
@@ -113,8 +129,12 @@ div.portfolio-text h3 {
 
   ul.top-menu li {
     background-color: #f8f9fa;
-    padding: 16px;
-    margin-bottom: 48px;
+    margin: 0 32px 48px 32px;
+  }
+
+  ul.top-menu li a {
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
   .profile {
@@ -160,5 +180,54 @@ div.portfolio-text h3 {
   .navbar {
     display: flex;
     justify-content: space-between;
+    background-color: #234099;
+    padding: 24px;
+    box-shadow: 3px 1px 8px #333;
+  }
+
+  .navbar h1 {
+    padding: 0;
+  }
+
+  .navbar ul {
+    margin-top: 0px;
+  }
+
+  .navbar ul li {
+    margin: 0px 0px 0px 16px;
+    padding: 0;
+  }
+
+  .navbar ul li a:hover {
+    background-color: #234099;
+    color: #f8f9fa;
+  }
+
+  .navbar ul li a {
+    display: block;
+    padding: 12px;
+  }
+
+  .portfolio {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  div.profile-picture img {
+    width: 50%;
+  }
+
+  .student-name-top {
+    color: #f8f9fa;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .skills div ul li {
+    list-style: none;
   }
 }

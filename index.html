@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <title>Responsive Website</title>
 </head>
-<body>
+<body id="home">
+  <nav class="navbar">
+    <h1 class="student-name-top">Jacob Spade</h1>
+    <ul class="top-menu">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
   <div class="section-color">
     <div class="container">
-      <div class="navbar">
-        <h1>Student Name</h1>
-        <ul class="top-menu">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">PORTFOLIO</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </div>
       <div class="profile">
         <div class="profile-picture">
-          <img src="images\responsive-layout-profile.png" alt="Profile Picture">
+          <img src="images\profile-image.jpg" alt="Profile Picture">
         </div>
         <div class="intro">
           <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
@@ -27,7 +30,7 @@
     </div>
   </div>
 
-  <h2>PORTFOLIO</h2>
+  <h2 id="portfolio">PORTFOLIO</h2>
 
   <div class="container portfolio">
     <div class="portfolio-1 portfolio-image">
@@ -79,20 +82,52 @@
     </div>
   </div>
 
+  <h2 id="skills">Skills</h2>
+  <div class="skills">
+    <div>
+      <h3>FRONT END</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Bootstrap</li>
+        <li>Materialize</li>
+      </ul>
+    </div>
+    <div>
+      <h3>BACK END</h3>
+      <ul>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>PostgreSQL</li>
+        <li>MongoDB</li>
+      </ul>
+    </div>
+    <div>
+      <h3>DESIGN</h3>
+      <ul>
+        <li>Adobe Illustrator</li>
+        <li>Adobe XD</li>
+      </ul>
+    </div>
+  </div>
+
   <footer class="section-color">
     <div class="container">
-      <h2 class="contact-title">CONTACT</h2>
+      <h2 class="contact-title" id="contact">CONTACT</h2>
       <p class="contact-text">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
       <p class="phone">Phone <strong>+1(111)555-1234</strong></p>
       <p class="email">Email <strong>email@yoursite.com</strong></p>
       <hr>
       <div class="footer-bottom">
-        <p class="student-name">Student name</p>
+        <p class="student-name">Jacob Spade</p>
         <p class="back-to-top">BACK TO TOP</p>
         <ul class="bottom-menu">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">PORTFOLIO</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
     </div>
