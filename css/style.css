@@ -121,6 +121,19 @@ div.portfolio-text h3 {
   display: none;
 }
 
+.back-to-top {
+  text-decoration: none;
+  color: #333;
+}
+
+.skills {
+  text-align: center;
+}
+
+.skills-box {
+  margin-bottom: 32px;
+}
+
 @media (min-width: 768px) {
   ul.top-menu {
     display: flex;
@@ -173,6 +186,15 @@ div.portfolio-text h3 {
   .bottom-menu li a {
     text-decoration: none;
     color: #333;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  div.skills-box ul li {
+    list-style: none;
   }
 }
 
