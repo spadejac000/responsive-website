@@ -150,10 +150,18 @@ div.portfolio-text h3 {
     padding-left: 32px;
   }
 
+  .profile .profile-picture {
+    float: right;
+    width: 50%;
+  }
+
+  .profile .intro {
+    float: left;
+    width: 50%;
+  }
+
   .profile {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 64px;
+    height: 400px;
   }
 
   div.intro {
